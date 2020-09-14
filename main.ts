@@ -962,8 +962,12 @@ namespace mbit_Robot {
         }
     }
 	*/
-	
-	function MotorRun(index: enMotors, speed: number): void {
+	//% blockId=mbit_MotorRun block="MotorRun|%index"
+    //% weight=93
+    //% blockGap=10
+    //% color="#006400"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
+	export function MotorRun(index: enMotors, speed: number): void {
         if (!initialized) {
             initPCA9685();
         }
